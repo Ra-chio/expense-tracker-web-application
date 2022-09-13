@@ -1,0 +1,81 @@
+* {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.row {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+
+.inp {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 0;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+}
+
+.inp:hover,
+.inp:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-left: 2px solid rgba(255, 255, 255, 0.8);
+  border-right: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+select {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 0;
+}
+
+option {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.add-btn {
+  background-color: rgba(131, 5, 248, 0.762);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+
+.add-btn:hover {
+  background-color: rgba(167, 72, 255, 0.837);
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(131, 5, 248, 0.762);
+}
+
+/* ------------------------------------------ */
+
+.card {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 1rem;
+  border-radius: 0;
+}
+
+span.item {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+span.amount {
+  float: right;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+}
+
+.dlt-btn {
+  background-color: rgba(203, 8, 8, 0.85);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+}
+
+.dlt-btn:hover {
+  background-color: rgba(255, 2, 2, 0.85);
+  color: rgba(255, 255, 255, 1);
+}

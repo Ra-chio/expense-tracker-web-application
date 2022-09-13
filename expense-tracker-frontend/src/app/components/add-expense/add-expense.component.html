@@ -1,0 +1,47 @@
+<div class="container form-container">
+  <div class="row">
+    <form (ngSubmit)="saveExpense()">
+      <div class="form-group">
+        <label for="expense">Expense Title</label>
+        <input
+          type="text"
+          name="expense"
+          [(ngModel)]="expense.expense"
+          placeholder="Ex: PowerBank"
+          class="form-control col-md-12 inp"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="amount">Amount spent</label>
+        <input
+          type="text"
+          name="amount"
+          [(ngModel)]="expense.amount"
+          placeholder="Ex: 4599"
+          class="form-control col-md-12 inp"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          type="text"
+          name="description"
+          [(ngModel)]="expense.description"
+          placeholder="Ex: 12000mAh Lithium polymer 18W fast PD charging"
+          class="form-control col-md-12 inp"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn add-btn">Add Expense</button>
+      <button
+        *ngIf="expense.id"
+        (click)="deleteExpense(expense.id)"
+        class="btn dlt-btn"
+      >
+        Delete
+      </button>
+    </form>
+  </div>
+</div>
